@@ -3,7 +3,55 @@
 @import "vars";
 @import "fonts";
 
-
+.top{
+  display: flex;
+  align-items: center;
+  &__img{
+    width: 960px;
+    height: 1000px;
+    object-fit: cover;
+    margin-right: 120px;
+  }
+  &__info{
+    max-width: 585px;
+  }
+  &__info-subtitle{
+    @extend %advent-600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #EF8B53;
+    margin-bottom: 20px;
+  }
+  &__info-title{
+    @extend %josefin-700;
+    font-size: 80px;
+    color: #151E29;
+    margin-bottom: 30px;
+  }
+  &__info-text{
+    max-width: 560px;
+    color: #546371;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9e8e8;
+    margin-bottom: 40px;
+  }
+  &__position{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+  &__position-item{
+    @extend %advent-600;
+    span{
+      @extend %advent-500;
+      display: block;
+      font-size: 16px;
+      line-height: 1;
+      margin-bottom: 5px;
+      color: #8C9399;
+    }
+  }
+}
 
 
 
