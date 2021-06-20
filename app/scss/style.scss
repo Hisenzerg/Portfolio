@@ -2,6 +2,7 @@
 @import "global";
 @import "vars";
 @import "fonts";
+@import "libs";
 
 .top{
   display: flex;
@@ -285,6 +286,204 @@
     color: #9BA3AE;
     line-height: 1.5;
   }
+}
+
+.portfolio{
+  color: #fff;
+  &__title{
+    @extend %title;
+    padding-left: 120px;
+  }
+  &__text{
+    color: #9BA3AE;
+    margin-bottom: 27px;
+    padding-left: 120px;
+  }
+  &__items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    overflow: hidden;
+    transition: all .3s;
+  }
+  &__item-img{
+    transition: all .5s;
+  }
+  &__item:hover{
+    .portfolio__item-img{
+      transform: scale(1.2);
+    }
+  }
+  &__item:nth-child(1),
+  &__item:nth-child(4){
+    width: 705px;
+    height: 450px;
+    .portfolio__item-img{
+      width: 705px;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+  &__item:nth-child(2),
+  &__item:nth-child(3){
+    width: 500px;
+    height: 450px;
+    .portfolio__item-img{
+      width: 500px;
+      height: 450px;
+      object-fit: cover;
+    }
+  }
+}
+
+.letter{
+  color: #fff;
+  &__inner{
+    padding: 120px;
+    
+  }
+  &__box{
+    width: 965px;
+    height: 671px;
+    padding: 80px 80px 176px 80px;
+    background-image: url('../images/icons/letter-bg.svg');
+  }
+  &__pretitle{
+    @extend %pretitle;
+    margin-bottom: 20px;
+  }
+  &__title{
+    @extend %title;
+  }
+  &__subtitle{
+    @extend %advent-600;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+  &__text{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #9BA3AE;
+  }
+  &__signature{
+    padding-top: 30px;
+  }
+}
+
+.contact{
+  &__inner{
+    background-color: #fff;
+    padding: 178px 120px;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__info{
+    margin-right: 60px;
+    max-width: 465px;
+  }
+  &__info-title{
+    @extend %josefin-700;
+    color: #151E29;
+    font-size: 48px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  &__info-text{
+    color: #546371;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+  }
+  &__info-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__info-item{
+    width: 205px;
+    margin-bottom: 30px;
+  }
+  &__info-pretitle{
+    font-size: 16px;
+    color: #8C9399;
+    margin-bottom: 5px;
+  }
+  &__info-content{
+    @extend %advent-600;
+    color: #151E29;
+  }
+  &__info-socialtitle{
+    @extend %josefin-600;
+    color: #151E29;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  &__info-social{
+    display: inline-block;
+    text-transform: uppercase;
+    @extend %advent-600;
+    font-size: 16px;
+    color: #546371;
+    margin-right: 30px;
+  }
+  &__form{
+    max-width: 440px;
+  }
+  &__form-title{
+    @extend %josefin-600;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  &__form-text{
+    font-size: 18px;
+    color: #546371;
+    margin-bottom: 30px;
+  }
+  &__form-input{
+    width: 100%;
+    height: 66px;
+    padding: 25px 0 25px 30px;
+    margin-bottom: 20px;
+    background-color: #F3F4F5;
+    color: #546371;
+    border: none;
+  }
+  &__form-input::placeholder,
+  &__form-textarea::placeholder{
+    font-size: 16px;
+    color: #8C9399;
+  }
+  &__form-textarea{
+    width: 100%;
+    height: 110px;
+    resize: none;
+    padding: 25px 0 25px 30px;
+    background-color: #F3F4F5;
+    color: #546371;
+    border: none;
+    margin-bottom: 20px;
+  }
+  &__form-btn{
+    cursor: pointer;
+    @extend %advent-600;
+    font-size: 18px;
+    padding: 24px 30px;
+    color: #fff;
+    border: none;
+    background-color: #EF8B53;
+  }
+}
+
+.footer{
+  text-align: center;
+  font-size: 18px;
+  color: #8C9399;
+  padding: 33px 0 36px;
 }
 
 
