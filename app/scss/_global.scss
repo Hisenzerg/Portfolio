@@ -1,29 +1,36 @@
+html,
+body{
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
 body{
   min-width: 320px;
-  overflow-x: hidden;
   @extend %advent-500;
   font-size: 20px;
   line-height: 1.2;
+  background-color: #0E151D;
 }
 
 .container {
-  max-width: 1230px;
-  padding: 0px 15px;
-  margin: 0 auto;
+  max-width: 1205px;
+  margin-left: auto;
 }
 
 .wrapper{
   display: flex;
-  justify-content: space-between;
-  height: 100vh;
 }
 
 .main{
-  max-width: 1790px;
+  width: 1790px;
 }
 
 .aside{
-  background-color: #000;
+  position: fixed;
+  right: 0;
+  background-color: #151E29;
   min-width: 130px;
   height: 100%;
+  color: #fff;
 }

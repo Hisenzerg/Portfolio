@@ -6,20 +6,30 @@
 .top{
   display: flex;
   align-items: center;
+  background-color: #fff;
   &__img{
     width: 960px;
     height: 1000px;
     object-fit: cover;
     margin-right: 120px;
+    position: relative;
+  }
+  &__img-text{
+    position: absolute;
+    color: #fff;
+    transform: rotate(-90deg);
+    font-size: 150px;
+    @extend %josefin-700;
+    text-transform: uppercase;
+    top: 182px;
+    left: 155px;
+    min-width: 1456px;
   }
   &__info{
     max-width: 585px;
   }
-  &__info-subtitle{
-    @extend %advent-600;
-    font-size: 24px;
-    line-height: 1.2;
-    color: #EF8B53;
+  &__info-pretitle{
+    @extend %pretitle;
     margin-bottom: 20px;
   }
   &__info-title{
@@ -50,6 +60,230 @@
       margin-bottom: 5px;
       color: #8C9399;
     }
+  }
+  &__info-btn{
+    cursor: pointer;
+    @extend %advent-600;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    background-color: #EF8B53;
+    padding: 24px 30px;
+    line-height: 1;
+    margin-right: 30px;
+  }
+  &__info-link{
+    padding-left: 33px;
+    color: #151E29;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 0;
+      top: 0;
+      background-image: url('../images/icons/link-icon.svg');
+    }
+  }
+}
+
+.services{
+  background-color: #0E151D;
+  display: flex;
+  align-items: center;
+  &__img{
+    margin-right: 120px;
+    width: 585px;
+    height: 1000px;
+    object-fit: cover;
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    max-width: 965px;
+  }
+  &__item{
+    padding: 0 50px 50px 0;
+    max-width: 468px;
+    color: #fff;
+  }
+  &__item-pretitle{
+    @extend %pretitle;
+    margin-bottom: 12px;
+  }
+  &__item-title{
+    @extend %title;
+  }
+  &__item-descr{
+    @extend %advent-600;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 451px;
+  }
+  &__item-spec{
+    line-height: 1.6;
+    color: #9BA3AE;
+  }
+  &__card{
+    padding: 50px;
+    max-width: 468px;
+    color: #fff;
+    background-image: url('../images/icons/card-bg.svg');
+  }
+  &__card-img{
+    margin-bottom: 43px;
+  }
+  &__card-title{
+    @extend %josefin-600;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  &__card-text{
+    font-size: 18px;
+    color: #9BA3AE;
+    line-height: 1.5;
+    max-width: 368px;
+  }
+}
+
+.experience{
+  color: #fff;
+  &__inner{
+    display: flex;
+  }
+  &__item{
+    width: 302px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &:nth-child(1),
+    &:nth-child(4){
+      .experience__item-num{
+        color: #3BC6CF;
+      }
+    }
+    &:nth-child(2){
+      .experience__item-num{
+        color: #EF8B53;;
+      }
+    }
+    &:nth-child(3){
+      .experience__item-num{
+        color: #2BD195;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(3){
+      background-color: #18222E;
+    }
+    &:nth-child(2),
+    &:nth-child(4){
+      background-color: #101923;
+    }
+  }
+  &__item-num{
+    @extend %josefin-700;
+    font-size: 80px;
+    line-height: 1;
+  }
+  &__content{
+    padding: 120px;
+    display: flex;
+  }
+  &__skill{
+    margin-right: 80px;
+    max-width: 468px;
+  }
+  &__skill-title{
+    @extend %title;
+  }
+  &__skill-text{
+    line-height: 1.5;
+    color: #9BA3AE;
+  }
+  &__skill-item{
+    @extend %advent-600;
+    padding: 42px 0 12px;
+    border-bottom: 7px solid #EF8B53;
+    position: relative;
+  }
+  &__skill-num{
+    position: absolute;
+    right: 0;
+    color: #9BA3AE;
+  }
+  &__skill-line{
+    position: absolute;
+    height: 7px;
+    bottom: -7px;
+    right: 0;
+    background-color: #232629;
+  }
+  &__lang-title{
+    margin-top: 86px;
+    @extend %title;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  &__lang-box{
+    display: flex;
+  }
+  &__lang-item{
+    margin-right: 40px;
+    text-align: center;
+  }
+  &__language{
+    @extend %advent-600;
+  }
+  &__lang-descr{
+    font-size: 18px;
+    color: #9BA3AE;
+  }
+  &__info{
+    max-width: 418px;
+  }
+  &__info-title{
+    @extend %title;
+  }
+  &__info-item{
+    padding: 0 0 30px 40px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 189px;
+      left: 0;
+      top: 0;
+      background-image: url('../images/icons/decor-1.svg');
+    }
+  }
+  &__info-item:not(:last-child){
+    margin-bottom: 75px;
+  }
+  &__info-item:last-child{
+    &::before{
+      background-image: url('../images/icons/decor-2.svg');
+    }
+  }
+  &__info-years{
+    @extend %josefin-600;
+    font-size: 24px;
+    margin-bottom: 3px;
+  }
+  &__info-position{
+    @extend %advent-600;
+    margin-bottom: 15px;
+  }
+  &__info-text{
+    font-size: 18px;
+    color: #9BA3AE;
+    line-height: 1.5;
   }
 }
 
