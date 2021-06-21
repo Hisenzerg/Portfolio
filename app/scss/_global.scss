@@ -3,6 +3,7 @@ body{
   height: 100vh;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -30,7 +31,7 @@ body{
   position: fixed;
   right: 0;
   background-color: #151E29;
-  min-width: 130px;
+  width: 130px;
   height: 100%;
   color: #fff;
 }

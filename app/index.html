@@ -19,7 +19,7 @@
 
     <main class="main">
 
-      <section class="top">
+      <section class="top" id="home">
         <div class="top__img-box">
           <img class="top__img" src="images/portfolio-1.jpg" alt="author image">
           <p class="top__img-text">
@@ -58,7 +58,46 @@
         </div>
       </section>
 
-      <section class="services">
+      <nav class="menu">
+        <button class="menu__btn-close"></button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#home">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#services">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#experience">Skills & Experience</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#letter">Cover Letter</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+        <button class="menu__download-btn">Download CV</button>
+        <ul class="menu__items">
+          <li class="menu__social-list">
+            <a class="menu__social-link" href="#">FB</a>
+          </li>
+          <li class="menu__social-list">
+            <a class="menu__social-link" href="#">TW</a>
+          </li>
+          <li class="menu__social-list">
+            <a class="menu__social-link" href="#">INS</a>
+          </li>
+          <li class="menu__social-list">
+            <a class="menu__social-link" href="#">PT</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="services" id="services">
         <img class="services__img" src="images/portfolio-2.jpg" alt="author image">
         <div class="services__content">
           <div class="services__item">
@@ -111,9 +150,9 @@
           </div>
       </section>
 
-      <section class="experience">
+      <section class="experience" id="experience">
         <div class="container">
-          <div class="experience__inner">
+          <div class="experience__inner" id="achievements">
             <div class="experience__item">
               <p class="experience__item-num">25+</p>
               <p class="experience__item-text">
@@ -228,7 +267,8 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <h3 class="portfolio__title">
             My Portfolio
@@ -258,7 +298,8 @@
             </div>
         </div>
       </section>
-      <section class="letter">
+
+      <section class="letter" id="letter">
         <div class="container">
           <div class="letter__inner">
             <div class="letter__box">
@@ -283,7 +324,8 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+
+      <section class="contact" id="contact">
         <div class="container">
           <div class="contact__inner">
             <div class="contact__info">
@@ -357,10 +399,27 @@
           All rights reserved. 2021 | Alex Volkov
         </p>
       </footer>
+
     </main>
 
     <div class="aside">
-      <button class="menu__btn"></button>
+      <button class="menu__btn">
+        <span class="menu__btn-line"></span>
+      </button>
+      <ul class="aside__items">
+        <li class="aside__list">
+          <a class="aside__social-link" href="#">FB</a>
+        </li>
+        <li class="aside__list">
+          <a class="aside__social-link" href="#">TW</a>
+        </li>
+        <li class="aside__list">
+          <a class="aside__social-link" href="#">INS</a>
+        </li>
+        <li class="aside__list">
+          <a class="aside__social-link" href="#">PT</a>
+        </li> 
+      </ul>
     </div>
 
   </div>

@@ -10,6 +10,17 @@
   font-size: 48px;
 }
 
+%download-btn{
+  cursor: pointer;
+  @extend %advent-600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  background-color: #EF8B53;
+  padding: 24px 30px;
+  line-height: 1;
+}
+
 %advent-500{
   font-family: 'Advent Pro', sans-serif;
   font-weight: 500;
