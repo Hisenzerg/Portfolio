@@ -361,8 +361,15 @@
               <p class="contact__form-text">
                 Don't hesitate to write to me  
               </p>
-              <input class="contact__form-input" type="text" placeholder="Name">
-              <input class="contact__form-input" type="text" placeholder="Email">
+
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Portfolio">
+              <input type="hidden" name="admin_email" value="mrhisenberg100@gmail.com">
+              <input type="hidden" name="form_subject" value="Form">
+              <!-- END Hidden Required Fields -->
+
+              <input class="contact__form-input" name="Name" type="text" placeholder="Name">
+              <input class="contact__form-input" name="Email" type="text" placeholder="Email">
               <textarea class="contact__form-textarea" placeholder="Message"></textarea>
               <button class="contact__form-btn">Send Message</button>
             </form>
